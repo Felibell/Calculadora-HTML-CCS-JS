@@ -1,0 +1,93 @@
+*{
+    font-family: 'Fraunces', serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    background-color: #224870;
+}
+
+.container {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.calculadora {
+    display:  grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: brown;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 15px 10px 2px 5px #00000033;
+    /* 1. 15px de sombra a la izquierda */
+    /* 2. 10px hacia abajo */
+    /* 3. 0px  */
+    /* 4. 5px para sombra */
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: brown;
+    box-shadow: 5px 5px 10px -3px #00000040;
+}
+
+button:active{
+
+    background-color:  #000000;
+}
+
+button:active{
+
+    background-color: #000000;
+
+}
+
+button:focus{
+
+    outline: none;
+}
+
+.col-2 {
+
+    grid-column: span 2;
+}
+
+.display{
+
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 17px 6px;
+    flex-direction: column;
+    align-items:  flex-end;
+    background-color: #363636;
+    border-radius:  60px;
+    text-align: right;
+    justify-content:space-around;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 18px #00000033;
+}
+
+#Valor-Anterior {
+
+    font-size: 1.5em;
+
+}
+
+#Valor-Actual{
+
+    font-size: 2em;
+}
+
+
